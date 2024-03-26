@@ -1,6 +1,18 @@
-import *  as S from './style.jsx'
+import *  as S from './styles/style.jsx'
 
 import ONDASH from './assets/ONDASH.svg'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import './styles/styleSwiper.css';
+
+// import required modules
+import { EffectCards } from 'swiper/modules';
+
 
 function App() {
 
@@ -37,7 +49,67 @@ function App() {
           </S.Heading4>
         </S.DivS1>
       </S.Section1>
+
+      {/* Section 2 */}
+      <S.Section2 id="section2">
+        <S.DivS2>
+          <S.Heading2>Missão</S.Heading2>
+          {/* <S.Bg1/> */}
+          {/* <br/><br/> */}
+          <br />
+          {/* <S.Br/> */}
+          <S.Text>
+          Criar aplicações ágeis para o gerenciamento rápido e fácil.
+          </S.Text>
+
+          <S.Br/>
+          <S.Heading2>Visão</S.Heading2>
+          <br />
+          <S.Text>
+          Ser uma empresa que revoluciona o mundo por meio da tecnologia.
+          </S.Text>
+        </S.DivS2>
+      </S.Section2>
+
+      {/* Section 3 */}
+      <S.Section3 id="section3">
+        <S.DivS3>
+          <S.Heading2>Missão</S.Heading2>
+          {/* <S.Bg1/> */}
+          {/* <br/><br/> */}
+          <br />
+          {/* <S.Br/> */}
+          <S.Text>
+          Criar aplicações ágeis para o gerenciamento rápido e fácil.
+          </S.Text>
+        </S.DivS3>
+      </S.Section3>
       
+      {/* Section 4 */}
+      <S.Section4 id="section4">
+        <S.DivS4>
+         
+        <Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="mySwiper"
+      >
+        {/* Slide 1 */}
+        <SwiperSlide>
+          <S.Heading4B>Transparência</S.Heading4B>
+          <S.TextCard>Fornecimento claro e acessível de informações aos clientes e parceiros.</S.TextCard>
+        </SwiperSlide>
+
+        {/* Slide 2 */}
+        <SwiperSlide>Slide 2</SwiperSlide>
+
+        {/* Slide 3 */}
+        <SwiperSlide>Slide 3</SwiperSlide>
+      </Swiper>
+
+        </S.DivS4>
+      </S.Section4>      
 
     </S.Body>
     
