@@ -29,7 +29,6 @@ export const Header = styled.header`
 
   align-items: center;
 `; 
-
 export const HeaderDiv = styled.div`
   width: 100vw;
 
@@ -41,10 +40,8 @@ export const HeaderDiv = styled.div`
   /* superior | direita | inferior | esquerda */
   //padding: 1rem 4rem 1rem 4rem;
 `
-
 // export const Nav = styled.nav`
 // `
-
 export const Ul = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -52,13 +49,11 @@ export const Ul = styled.ul`
   padding-top: 1rem;
   padding-bottom: 1rem;
 `
-
 export const Li = styled.li`
   list-style-type: none;
 
   padding-left: 3rem;
 `
-
 export const Link = styled.a`
   font-size: 18px;
   font-family: 'Mulish', sans-serif;
@@ -72,7 +67,6 @@ export const Link = styled.a`
     //opacity: 0.7
   }
 `;
-
 export const Logo = styled.img`
 
   height: 2rem;
@@ -84,24 +78,45 @@ export const Logo = styled.img`
 // SECTI0N1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export const Section1 = styled.section`
-  background-image: url("src/assets/inicio.png");
+  background-image: url("src/assets/annie-spratt-dWYU3i-mqEo-unsplash 1.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  width: auto;
+  width: 100%;
+  background-position: right bottom;
+
+  align-content: center;
 `;
 export const DivS1 = styled.div`
   display: flex;
   align-items: left;
   margin-left: 7vw;
-  padding-top: 9rem;
 
-  width: 50%;
+  width: 35%;
 
   flex-direction: column;
 `;
-export const Br = styled.div`
-  padding-bottom: 4rem;
+export const Button1 = styled.button`
+  display:flex;
+  background-color: #91B9F8;
+  height: 3rem;
+  width: 10rem;
+
+  padding: 1rem;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700; //bold
+  color: #000000;
+`;
+export const DivButton = styled.div`
+  display: flex;
+  justify-content: right;
+
+  margin-right: 7vw;
 `;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,24 +124,23 @@ export const Br = styled.div`
 // SECTI0N2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export const Section2 = styled.section`
-  background-image: 
+  /* background-image: 
   linear-gradient(to bottom, transparent 80%, #fff 100%), url(src/assets/missao.png),
-  linear-gradient(to left, rgb(0,0,0, 0), rgb(0,0,0, 1));
+  linear-gradient(to left, rgb(0,0,0, 0), rgb(0,0,0, 1)); */
 
-  //background-image: linear-gradient(rgba(30, 102, 7, 1), rgba(30, 102, 7, 0.2));
-  //background-image: url("src/assets/missao.png");
-  //background-image: linear-gradient(to bottom, transparent 80%, #fff 100%), url(src/assets/missao.png);
+  background-image: url("src/assets/missao.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: auto;
+  background-position: left top;
+
+  align-content: center;
 `;
 export const DivS2 = styled.div`
   display: flex;
   align-items: left;
   margin-left: 7vw;
-  padding-top: 8rem;
-
   width: 20%;
 
   flex-direction: column;
@@ -151,21 +165,23 @@ export const DivS3 = styled.div`
 
   flex-direction: column;
 `;
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 // SECTI0N4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export const Section4 = styled.section`
-  background-color: #fff;
+  background-image: url("src/assets/heidi-fin-fr0FRbTxGoQ-unsplash 1.svg");
+  background-size: cover;
+  //background-repeat: no-repeat;
   height: 100vh;
-  width: auto;
+  //width: auto;
+
+  background-position: top;
+  align-content:center;
 `;
 export const DivS4 = styled.div`
   display: flex;
-  //align-items: center;
-  //align-content: center;
   justify-content: center;
   margin-left: 7vw;
   padding-top: 2rem;
@@ -185,9 +201,64 @@ export const TextCard = styled.h2`
   text-decoration: none;
   text-align: center;
 `;
+export const DivCard = styled.div`
+  display: flex;
+  align-items: center;
+
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+`
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// SECTI0N5 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+export const Section5 = styled.section`
+  background-image: url("src/assets/centre-for-ageing-better-ZlOlRnWk8zU-unsplash.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  //width: auto;
+  background-position:  left;
+
+  align-content:center;
+`;
+export const DivS5 = styled.div`
+  display: flex;
+  align-items: left;
+  
+  margin-left: 7vw;
+  width: 30%;
+
+  flex-direction: column;
+`;
+export const DivLi = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  row-gap: 1rem;
+`;
+export const Button2 = styled.button`
+  display:flex;
+  background-color: #91B9F8;
+  height: 3rem;
+  width: 14rem;
+
+  padding: 1rem;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700; //bold
+  color: #000000;
+`;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+export const Br = styled.div`
+  padding-bottom: 4rem;
+`;
 // *******************************************************************
 // Textos White
 export const Heading1 = styled.h1`
@@ -263,6 +334,7 @@ color: #000;
 
 //text-align: left;
 text-decoration: none;
+/* padding-left:2rem; */
 `;
 
 
