@@ -9,6 +9,9 @@ npm install swiper
 vite-plugin-svgr
 npm install --save-dev vite-plugin-svgr
 
+Chakra UI
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
